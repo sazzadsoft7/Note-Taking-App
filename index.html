@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"
+      href="https://scontent.fzyl1-1.fna.fbcdn.net/v/t39.30808-6/326292213_1233273087600760_3847057262609278010_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFUqAs-RQCvyc_yN-EOLQqPMmrGBANemdAyasYEA16Z0FcTxavILGK0UyWO89OJj0XpcBJ0dyKdxkHMJaynxsEl&_nc_ohc=OjCmCBuPgTsAX-W2-NQ&_nc_ht=scontent.fzyl1-1.fna&oh=00_AfAIJKG0pUbKJ1Zqx1kvTeWIpc6eN-ZYQ_BgzIpq5a6D2g&oe=63F4D464"
+      type="image/x-icon" />
+    <title>Notes App</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <div class="nav">
+      <div>
+        <a href="https://soft.app/">
+          <img src="data:image/jpeg;base64,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" width="60" height="50" alt="logo">
+        </a>
+      </div>
+      <div class="visit">
+        <a href="https://soft.app/">Visit Us</a>
+      </div>
+    </div>
+    </header>
+
+    <section>
+      <div class="container section-container">
+        <!-- form container -->
+        <div class="form-container">
+          <h2>Add Note</h2>
+          <hr />
+          <form>
+            <input type="text" id="note-title" placeholder="Note title" />
+            <textarea
+              id="note-text"
+              cols="30"
+              rows="10"
+              placeholder="Note details"
+            ></textarea>
+            <button id="add-btn" class="btn btn-danger btn-lg">Add Note</button>
+          </form>
+        </div>
+
+        <!-- notes container -->
+        <div class="notes-container">
+          <div class="container">
+            <div class="notes-header">
+              <h2>Your Notes</h2>
+              <button class="clear note-btn">Delete all notes</button>
+            </div>
+            <hr />
+
+            <div id="notes">
+              <!-- <div class="note">
+                <div class="note-cta">
+                  <p class="note-counter">Note 1</p>
+                  <div class="note-cta-btn">
+                    <button class="note-btn">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                    <button class="note-btn edit-btn">
+                      <i class="fas fa-edit"></i> Edit
+                    </button>
+                  </div>
+                </div>
+                <hr />
+                <h3 class="note-title">Title: Hello</h3>
+                <p class="note-text">This is some content...</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
